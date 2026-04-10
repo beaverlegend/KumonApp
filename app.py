@@ -9,7 +9,7 @@ app = Flask(__name__)
 # This checks if we are running on Render; otherwise, it uses your local folder.
 if os.environ.get('RENDER'):
     # This path matches the 'Mount Path' you'll set in Render's dashboard
-    DB_PATH = '/home/KerryLi/flask_project/kumon_progress.db'
+    DB_PATH = '/opt/render/project/src/data/kumon_progress.db'
 else:
     # Local path for development
     DB_PATH = 'kumon_progress.db'
